@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// 🟣 PANTALLA INICIO
+
 class InicioScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,12 +30,12 @@ class InicioScreen extends StatelessWidget {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: Colors.white, // fondo blanco
+                  color: Colors.white, 
                   shape: BoxShape.circle,
                 ),
                 child: Icon(
                   Icons.bolt,
-                  color: Colors.black, // rayo negro
+                  color: Colors.black, 
                   size: 40,
                 ),
               ),
@@ -84,13 +84,163 @@ class InicioScreen extends StatelessWidget {
     );
   }
 }
-
 class LoginScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFFFF1493), 
+      body: Center(
+        child: Container(
+          margin: EdgeInsets.all(20),
+          padding: EdgeInsets.all(25),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(40), 
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black54,
+                blurRadius: 20,
+                offset: Offset(0, 10),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+
+              Text(
+                "INICIAR SESION",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+
+              SizedBox(height: 20),
+
+              // EMAIL
+              TextField(
+                decoration: InputDecoration(
+                  labelText: "E-mail",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+
+              SizedBox(height: 15),
+
+
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "Contraseña",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RecuperarScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("¿Olvidaste tu contraseña?"),
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFFFF1493),
+                  foregroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric(
+                      horizontal: 40, vertical: 15),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen (),
+                    ),
+                  );
+                },
+                child: Text("INICIAR SESION"),
+              ),
+
+              SizedBox(height: 15),
+
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("¿Ya tienes cuenta? "),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => RegistroScreen(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "Registrate",
+                      style: TextStyle(
+                        color: Color(0xFFFF1493),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     throw UnimplementedError();
   }
 }
+
+class RegistroScreen extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
+class RecuperarScreen extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
+
 
 
