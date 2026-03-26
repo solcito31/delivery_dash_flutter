@@ -217,6 +217,138 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
+class RegistroScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFFFF1493),
+      body: Center(
+        child: Container(
+          margin: EdgeInsets.all(20),
+          padding: EdgeInsets.all(25),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(40),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black54,
+                blurRadius: 20,
+                offset: Offset(0, 10),
+              ),
+            ],
+          ),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+
+                Text(
+                  "REGISTRO",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+
+                SizedBox(height: 20),
+
+
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: "Nombre",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 15),
+
+
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: "E-mail",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 15),
+
+
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Contraseña",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 15),
+
+
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Confirmar contraseña",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 25),
+
+
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFFF1493),
+                    foregroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(
+                        horizontal: 40, vertical: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  onPressed: () {
+
+                  },
+                  child: Text("REGISTRARME"),
+                ),
+
+                SizedBox(height: 15),
+
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("¿Ya tienes cuenta? "),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context); // vuelve al login
+                      },
+                      child: Text(
+                        "Iniciar sesión",
+                        style: TextStyle(
+                          color: Color(0xFFFF1493),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class HomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -225,13 +357,7 @@ class HomeScreen extends StatelessWidget{
   }
 }
 
-class RegistroScreen extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-}
+
 
 class RecuperarScreen extends StatelessWidget{
   @override
