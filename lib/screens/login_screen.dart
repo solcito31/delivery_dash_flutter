@@ -14,7 +14,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
 
-              // 🔙 BOTÓN ATRÁS
+              //  BOTÓN ATRÁS
               Align(
                 alignment: Alignment.topLeft,
                 child: Padding(
@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
 
-              // ⚡ ICONO + LOGO
+              //  ICONO y LOGO
               Container(
                 width: 90,
                 height: 90,
@@ -63,7 +63,7 @@ class LoginScreen extends StatelessWidget {
 
               SizedBox(height: 30),
 
-              // 📦 CARD LOGIN
+              //  CARD LOGIN
               Container(
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(25),
@@ -143,7 +143,7 @@ class LoginScreen extends StatelessWidget {
 
                     SizedBox(height: 15),
 
-                    // 🔥 BOTÓN NEÓN
+                    //  BOTÓN NEÓN
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(

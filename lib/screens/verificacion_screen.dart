@@ -10,7 +10,7 @@ class VerificacionScreen extends StatelessWidget {
         child: Column(
           children: [
 
-            // 🔙 BOTÓN ATRÁS
+            //  BOTÓN ATRÁS
             Align(
               alignment: Alignment.topLeft,
               child: Padding(
@@ -30,7 +30,7 @@ class VerificacionScreen extends StatelessWidget {
               ),
             ),
 
-            // 📱 ICONO
+            //  ICONO
             Container(
               width: 90,
               height: 90,
@@ -66,7 +66,7 @@ class VerificacionScreen extends StatelessWidget {
 
             SizedBox(height: 40),
 
-            // 🔢 CAJAS OTP
+            // CAJAS OTP
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(4, (index) {
@@ -98,7 +98,7 @@ class VerificacionScreen extends StatelessWidget {
 
             SizedBox(height: 40),
 
-            // 🔥 BOTÓN VERIFICAR
+            //  BOTÓN VERIFICAR
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(

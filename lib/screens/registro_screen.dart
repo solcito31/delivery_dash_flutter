@@ -9,7 +9,7 @@ class RegistroScreen extends StatelessWidget {
           child: Column(
             children: [
 
-              // 🔙 BOTÓN ATRÁS
+              // BOTÓN ATRÁS
               Align(
                 alignment: Alignment.topLeft,
                 child: Padding(
@@ -31,7 +31,7 @@ class RegistroScreen extends StatelessWidget {
                 ),
               ),
 
-              // ⚡ ICONO + LOGO
+              // ICONO y LOGO
               Container(
                 width: 90,
                 height: 90,
@@ -59,7 +59,7 @@ class RegistroScreen extends StatelessWidget {
 
               SizedBox(height: 30),
 
-              // 📦 CARD REGISTRO
+              //  CARD REGISTRO
               Container(
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(25),
@@ -154,7 +154,7 @@ class RegistroScreen extends StatelessWidget {
 
                     SizedBox(height: 20),
 
-                    // 🔥 BOTÓN REGISTRAR
+                    //  BOTÓN REGISTRAR
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(

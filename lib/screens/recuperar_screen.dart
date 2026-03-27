@@ -12,7 +12,7 @@ class RecuperarScreen extends StatelessWidget {
           child: Column(
             children: [
 
-              // 🔙 BOTÓN ATRÁS
+              //  BOTÓN ATRÁS
               Align(
                 alignment: Alignment.topLeft,
                 child: Padding(
@@ -32,7 +32,7 @@ class RecuperarScreen extends StatelessWidget {
                 ),
               ),
 
-              // 🔒 ICONO
+              //  ICONO
               Container(
                 width: 90,
                 height: 90,
@@ -73,7 +73,7 @@ class RecuperarScreen extends StatelessWidget {
 
               SizedBox(height: 30),
 
-              // 📦 CARD
+              //  CARD
               Container(
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(25),
@@ -134,7 +134,7 @@ class RecuperarScreen extends StatelessWidget {
 
                     SizedBox(height: 25),
 
-                    // 🔥 BOTÓN NEÓN
+                    // BOTÓN NEÓN
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
