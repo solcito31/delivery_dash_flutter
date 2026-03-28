@@ -63,7 +63,7 @@ class RecuperarScreen extends StatelessWidget {
               SizedBox(height: 10),
 
               Text(
-                "DELIVERY DASH • SEGURIDAD DE CUENTA",
+                "OTTO DASH • SEGURIDAD DE CUENTA",
                 style: TextStyle(
                   color: Colors.white54,
                   fontSize: 12,

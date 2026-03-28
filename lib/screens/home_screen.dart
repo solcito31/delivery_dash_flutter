@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'hamburguesas_screen.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -109,14 +110,22 @@ class HomeScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  _category(Icons.fastfood, "Hamburguesas"),
-                  _category(Icons.local_pizza, "Pizza"),
-                  _category(Icons.ramen_dining, "Sushi"),
-                  _category(Icons.local_drink, "Bebidas"),
+                  _category(Icons.fastfood, "Hamburguesas", () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HamburguesasScreen(),
+                      ),
+                    );
+                  }),
+                  _category(Icons.local_pizza, "Pizza", () {}),
+                  _category(Icons.ramen_dining, "Sushi", () {}),
+                  _category(Icons.local_drink, "Bebidas", () {}),
                 ],
               ),
 
               SizedBox(height: 25),
+
 
               //  ENVÍO GRATIS
               Text("Envío Gratis",
@@ -148,21 +157,24 @@ class HomeScreen extends StatelessWidget {
   }
 
   //  CATEGORÍA
-  Widget _category(IconData icon, String text) {
-    return Column(
-      children: [
-        Container(
-          padding: EdgeInsets.all(15),
-          decoration: BoxDecoration(
-            color: Colors.black26,
-            shape: BoxShape.circle,
+  Widget _category(IconData icon, String text, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(15),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              shape: BoxShape.circle,
+            ),
+            child: Icon(icon, color: Color(0xFFFF00CC)),
           ),
-          child: Icon(icon, color: Color(0xFFFF00CC)),
-        ),
-        SizedBox(height: 8),
-        Text(text,
-            style: TextStyle(color: Colors.white, fontSize: 12)),
-      ],
+          SizedBox(height: 8),
+          Text(text,
+              style: TextStyle(color: Colors.white, fontSize: 12)),
+        ],
+      ),
     );
   }
 }

@@ -49,7 +49,7 @@ class RegistroScreen extends StatelessWidget {
               SizedBox(height: 15),
 
               Text(
-                "DELIVERY DASH",
+                "OTTO DASH",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 22,

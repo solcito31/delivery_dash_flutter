@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'login_screen.dart';
 class InicioScreen extends StatelessWidget {
   @override
@@ -26,7 +25,7 @@ class InicioScreen extends StatelessWidget {
                 ),
               ),
               Text(
-                "DELIVERY DASH",
+                "OTTO DASH",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 32,
