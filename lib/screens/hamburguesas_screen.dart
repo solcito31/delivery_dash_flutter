@@ -26,7 +26,7 @@ class HamburguesasScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              //  TITULO
+
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
@@ -51,7 +51,7 @@ class HamburguesasScreen extends StatelessWidget {
                 ),
               ),
 
-              //  LISTA HAMBURGUESAS
+              // lista
               Expanded(
                 child: StreamBuilder(
                   stream: FirebaseFirestore.instance

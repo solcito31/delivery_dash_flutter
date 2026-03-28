@@ -205,13 +205,19 @@ class RecuperarScreen extends StatelessWidget {
 
               SizedBox(height: 10),
 
-              Text(
-                "— NEON PULSE SYSTEM —",
-                style: TextStyle(
-                  color: Colors.white30,
-                  fontSize: 12,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.inventory_2, color: Colors.white30, size: 28),
+                  SizedBox(width: 25),
+                  Icon(Icons.delivery_dining, color: Colors.white30, size: 28),
+                  SizedBox(width: 25),
+                  Icon(Icons.shopping_cart, color: Colors.white30, size: 28),
+                ],
               ),
+
+              SizedBox(height: 20),
+
 
               SizedBox(height: 20),
             ],

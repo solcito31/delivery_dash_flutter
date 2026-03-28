@@ -214,9 +214,24 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+
                   ],
                 ),
               ),
+
+              SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.inventory_2, color: Colors.white30, size: 28),
+                  SizedBox(width: 25),
+                  Icon(Icons.delivery_dining, color: Colors.white30, size: 28),
+                  SizedBox(width: 25),
+                  Icon(Icons.shopping_cart, color: Colors.white30, size: 28),
+                ],
+              ),
+
+              SizedBox(height: 20),
             ],
           ),
         ),

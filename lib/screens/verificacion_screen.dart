@@ -152,6 +152,19 @@ class VerificacionScreen extends StatelessWidget {
                 style: TextStyle(color: Color(0xFFFF00CC)),
               ),
             ),
+            SizedBox(height: 200),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.inventory_2, color: Colors.white30, size: 28),
+                SizedBox(width: 25),
+                Icon(Icons.delivery_dining, color: Colors.white30, size: 28),
+                SizedBox(width: 25),
+                Icon(Icons.shopping_cart, color: Colors.white30, size: 28),
+              ],
+            ),
+
+            SizedBox(height: 10),
           ],
         ),
       ),

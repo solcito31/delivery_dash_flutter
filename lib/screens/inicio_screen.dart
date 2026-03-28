@@ -36,7 +36,7 @@ class InicioScreen extends StatelessWidget {
               SizedBox(height: 20),
 
               Text(
-                "Entrega a la velocidad del rayo",
+                "Tu Antojo a la velocidad del rayo",
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 18,
@@ -45,22 +45,45 @@ class InicioScreen extends StatelessWidget {
 
               SizedBox(height: 500),
 
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Color(0xFFFF00CC),
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 40, vertical: 15),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginScreen (),
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xFFFF00CC),
+                      Color(0xFFFF1493),
+                    ],
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0xFFFF00CC).withOpacity(0.6),
+                      blurRadius: 10,
                     ),
-                  );
-                },
-                child: Text("INICIAR"),
+                  ],
+                ),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.transparent,
+                    shadowColor: Colors.transparent,
+                    padding: EdgeInsets.symmetric(vertical: 20),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginScreen(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "INICIAR",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
